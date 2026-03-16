@@ -1,0 +1,141 @@
+.left-menu {
+  width: 320px;
+  height: 100vh;
+  background-color: var(--gray);
+  color: var(--gray-dark);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.header__text {
+  font-size: 2rem;
+  line-height: 10%;
+  padding-left: 2rem;
+  font-weight: var(--semibold);
+}
+
+.search-section {
+  padding-left: 2rem;
+  display: flex;
+  gap: 8px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--border-radios);
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  font-size: var(--fz-input);
+}
+
+.search-input::placeholder {
+  color: var(--text-input);
+}
+
+.search-button {
+  padding: 8px 16px;
+  margin-right: 1rem;
+  background-color: var(--blue);
+  color: var(--gray-dark);
+  border: none;
+  border-radius: var(--border-radios);
+  cursor: pointer;
+  font-size: var(--fz-input);
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: var(--button-hover);
+}
+
+.search-in-menu {
+  padding: 15px 20px;
+}
+
+.menu-search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--border-radios);
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  font-size: var(--fz-input);
+}
+
+.menu-search-input::placeholder {
+  color: var(--text-input);
+}
+
+.menu-nav {
+  padding: 10px 0;
+}
+
+.menu-section {
+  margin-bottom: 5px;
+}
+
+.menu-section-header {
+  width: 100%;
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  color: var(--gray-dark);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--text-xl);
+  transition: background-color 0.2s;
+  border-left: 3px solid transparent;
+  font-weight: 600;
+}
+
+.menu-section-header:hover {
+  background-color: var(--bg-hover);
+}
+
+.menu-section-header.open {
+  background-color: var(--bg-hover);
+}
+
+.menu-label {
+  flex: 1;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  color: var(--gray-dark);
+  transition: transform 0.2s;
+}
+
+.submenu {
+  background-color: var(--bg-hover);
+  padding: 5px 0;
+}
+
+.submenu-item {
+  width: 100%;
+  padding: 12px 20px 12px 56px; /* Отступ слева для иерархии */
+  background: none;
+  border: none;
+  color: var(--gray-dark);
+  text-align: left;
+  cursor: pointer;
+  font-size: var(--fz-input);
+  transition: all 0.2s;
+  display: block;
+}
+
+.submenu-item:hover {
+  background: var(--button-hover);
+  color: var(--gray-dark);
+}
+
+.submenu-item.active {
+  background: var(--button-hover);
+  color: var(--gray-dark);
+}

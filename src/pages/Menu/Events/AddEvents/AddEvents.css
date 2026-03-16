@@ -1,0 +1,245 @@
+.event-form-header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+  height: 3rem;
+  width: 25rem;
+  color: var(--text-black);
+  height: 3.5rem;
+  font-weight: 600;
+  font-size: var(--fz-input);
+  background-color: var(--blue);
+  border-radius: var(--border-radios);
+  text-align: center;
+}
+
+.back-link:hover {
+  color: var(--text-black);
+  background-color: var(--button-hover);
+}
+
+.back-link::before {
+  content: "←";
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 800px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form-label {
+  min-width: 220px;
+  font-size: var(--fz-input);
+  font-weight: 500;
+  color: var(--text-black);
+  padding-top: 0.5rem;
+}
+
+.required-star {
+  color: #ff3b30;
+  margin-left: 0.25rem;
+}
+
+.form-field {
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  height: 42px;
+  padding: 0 1rem;
+  background: var(--gray-light);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--border-radios);
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.form-input:hover {
+  border-color: var(--blue);
+  background: white;
+}
+
+.form-input:focus {
+  border-color: var(--blue);
+  background: white;
+}
+
+/* Чекбоксы */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.form-checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--blue, #0066cc);
+}
+
+/* Возрастные категории */
+.age-categories {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+
+.age-category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fz-input);
+  color: var(--text-black, #000000);
+  cursor: pointer;
+}
+
+.age-category input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--blue, #0066cc);
+}
+
+/* Селекты */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper.select-small {
+  max-width: 200px;
+}
+
+.form-select {
+  width: 100%;
+  height: 42px;
+  padding: 0 1rem;
+  padding-right: 2.5rem;
+  background: var(--gray-light);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--border-radios);
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-select:hover {
+  border-color: var(--blue);
+  background: white;
+}
+
+.form-select:focus {
+  border-color: var(--blue);
+  background: white;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2386868b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+/* Подсказка */
+.form-hint {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-input);
+  line-height: 1.5;
+  padding: 0.5rem 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .event-form-container {
+    padding: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-label {
+    min-width: auto;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .form-field {
+    width: 100%;
+  }
+
+  .age-categories {
+    gap: 1rem;
+  }
+
+  .select-wrapper.select-small {
+    max-width: 100%;
+  }
+
+  .category-field {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .add-category-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .age-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .back-link {
+    font-size: 0.9rem;
+  }
+
+  .back-link::before {
+    font-size: 1rem;
+  }
+}
