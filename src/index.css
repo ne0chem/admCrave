@@ -36,7 +36,7 @@ body {
   font-size: 62.5%;
   font-weight: normal;
   background-color: #000000;
-  color: #828282;
+  color: var(--text-black);
   cursor: default;
 }
 h1,
@@ -69,8 +69,11 @@ input {
 
   /* Кнопки и активные элементы */
   --blue: #0066cc; /* цвет обычный - фирменный синий Apple */
-  --button-hover: #0077ed; /* цвет при наведении */
+  --button-hover: ##147ce5; /* цвет при наведении */
   --input-hover: #0076ed3f;
+  /*кнопки в осовном контенте на фоне #d8d8d8*/
+  --button: #ffffff;
+  --button-active: #b1b1b1; /* цвет при нажатии */
 
   /* Размеры текста */
   --fz-input: 1.5rem; /*часто используется*/

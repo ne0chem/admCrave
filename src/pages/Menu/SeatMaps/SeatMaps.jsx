@@ -1,30 +1,33 @@
-// App.tsx
 import React from "react";
-import "./Events.css";
 import { useNavigate } from "react-router-dom";
+//Распоясовки
 
-const Events = () => {
+//сделать логику открытия модалки
+//добавить в массив иконку ексель
+//сделать логику для скачивания и отображаения инфы в екселе
+//добавить логику при клике на список что бы была возможность переноса в неактуальное
+export default function SeatMaps() {
   const events = [
     {
       name: "Crave Airlines",
-      category: "-",
-      location: "-",
-      mapLink: "-",
-      lastSession: "25.10.2023 20:00",
+      category: "Airlines",
+      location: "Театр Crave",
+      plice: "120",
+      price: "160000",
     },
     {
       name: "Crave Airlines Премьера",
-      category: "-",
-      location: "-",
-      mapLink: "-",
-      lastSession: "30.11.2023 19:00",
+      category: "Airlines",
+      location: "Театр Crave",
+      plice: "120",
+      price: "160000",
     },
     {
       name: "Crave Airlines Премьера",
-      category: "-",
-      location: "-",
-      mapLink: "-",
-      lastSession: "11.11.2023 19:00",
+      category: "Airlines",
+      location: "Театр Crave",
+      plice: "120",
+      price: "160000",
     },
   ];
   const navigate = useNavigate();
@@ -35,9 +38,9 @@ const Events = () => {
   return (
     <div className="return">
       <div className="card-header">
-        <h1 className="title">Мероприятия</h1>
+        <h1 className="title ">Распоясовки</h1>
         <button className="button__dop button-create" onClick={handleClick}>
-          Создать мероприятие
+          Создать распоясовку
         </button>
       </div>
       <div className="search">
@@ -58,11 +61,11 @@ const Events = () => {
               <th>
                 <input className="checkbox__item" type="checkbox" />
               </th>
-              <th>Мероприятия</th>
-              <th>Категория</th>
-              <th>Место проведения / Схема зала</th>
-              <th>Расположения</th>
-              <th>Последний сеанс</th>
+              <th>Распоясовка</th>
+              <th>Схема зала</th>
+              <th>Место проведения</th>
+              <th>Кол-во мест</th>
+              <th>Стоимость</th>
               <th>Действие</th>
             </tr>
           </thead>
@@ -72,11 +75,12 @@ const Events = () => {
                 <td>
                   <input className="checkbox__item" type="checkbox" />
                 </td>
+                {/* тут добавить файл эксель */}
                 <td className="event-name">{event.name}</td>
                 <td className="muted">{event.category}</td>
                 <td className="muted">{event.location}</td>
-                <td className="muted">{event.mapLink}</td>
-                <td className="muted">{event.lastSession}</td>
+                <td className="muted">{event.plice}</td>
+                <td className="muted">{event.price}</td>
                 <td>
                   <button className="action-btn" aria-label="Действие">
                     <button className="action-btn" aria-label="Редактировать">
@@ -138,6 +142,4 @@ const Events = () => {
       </div>
     </div>
   );
-};
-
-export default Events;
+}

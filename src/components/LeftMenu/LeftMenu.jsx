@@ -95,24 +95,142 @@ const LeftMenu = ({ activeItem, onMenuClick }) => {
           {openSections.menu && (
             <div className="submenu">
               <button
+                className={`submenu-item ${activeItem === "room-config" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/room-config", "room-config")
+                }
+              >
+                Конфигурация кабинета
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "seat-maps" ? "active" : ""}`}
+                onClick={() => handleMenuItemClick("/seat-maps", "seat-maps")}
+              >
+                Распоясовки
+              </button>
+              <button
                 className={`submenu-item ${activeItem === "events" ? "active" : ""}`}
                 onClick={() => handleMenuItemClick("/events", "events")}
               >
                 Мероприятия
               </button>
               <button
-                className={`submenu-item ${activeItem === "categories" ? "active" : ""}`}
-                onClick={() => handleMenuItemClick("/categories", "categories")}
+                className={`submenu-item ${activeItem === "menu-seans" ? "active" : ""}`}
+                onClick={() => handleMenuItemClick("/menu-seans", "menu-seans")}
               >
                 Сеансы
               </button>
               <button
-                className={`submenu-item ${activeItem === "ingredients" ? "active" : ""}`}
+                className={`submenu-item ${activeItem === "report-delivery" ? "active" : ""}`}
                 onClick={() =>
-                  handleMenuItemClick("/ingredients", "ingredients")
+                  handleMenuItemClick("/report-delivery", "report-delivery")
+                }
+              >
+                Рассылка отчетов
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "quota-distribution" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick(
+                    "/quota-distribution",
+                    "quota-distribution",
+                  )
+                }
+              >
+                Распределение квот по образцу
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "agent-invoices" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/agent-invoices", "agent-invoices")
+                }
+              >
+                Сводные накладные на выдачу агентам
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "group-revaluation" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/group-revaluation", "group-revaluation")
+                }
+              >
+                Групповая переоценка
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "promo-codes" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/promo-codes", "promo-codes")
+                }
+              >
+                Промокоды
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "promo-code-generator" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick(
+                    "/promo-code-generator",
+                    "promo-code-generator",
+                  )
+                }
+              >
+                Автогенерация промокодов
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "discounts" ? "active" : ""}`}
+                onClick={() => handleMenuItemClick("/discounts", "discounts")}
+              >
+                Скидки от количества билетов
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "widgets" ? "active" : ""}`}
+                onClick={() => handleMenuItemClick("/widgets", "widgets")}
+              >
+                Виджеты
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "client-list" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/client-list", "client-list")
                 }
               >
                 Список клиентов
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "newsletter-subscriptions" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick(
+                    "/newsletter-subscriptions",
+                    "newsletter-subscriptions",
+                  )
+                }
+              >
+                Подписки на рассылку
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "related-products" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/related-products", "related-products")
+                }
+              >
+                Сопутствующие товары
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "related-products-and-services" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick(
+                    "/related-products-and-services",
+                    "related-products-and-services",
+                  )
+                }
+              >
+                Сопутствующие товары и услуги
+              </button>
+              <button
+                className={`submenu-item ${activeItem === "refund-rules" ? "active" : ""}`}
+                onClick={() =>
+                  handleMenuItemClick("/refund-rules", "refund-rules")
+                }
+              >
+                Правила возврата электронных билетов
               </button>
             </div>
           )}

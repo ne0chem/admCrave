@@ -1,0 +1,169 @@
+/* главный контенер страницы */
+.return {
+  display: flex;
+  flex-direction: column;
+}
+/* маленькие контейнеры */
+.return__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50rem;
+}
+.flex {
+  display: flex;
+}
+/* контейнер для инпутов и в колонку  */
+.poisk__container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/*контейнер где есть spase-between*/
+.card-header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+/* контейнер для инпутов   */
+.container__flex {
+  display: flex;
+  gap: 2rem;
+}
+/*заголово на каждой странице*/
+.filter-container {
+  display: flex;
+  gap: 1rem;
+  width: 20rem;
+}
+.mt2 {
+  margin-top: 2rem;
+}
+/*заголово на каждой странице*/
+.title {
+  font-size: var(--text-xl);
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+/*любой не жирный текс и не заголовок*/
+.text {
+  font-size: var(--fz-input);
+}
+.text__bold {
+  font-weight: 600;
+  font-size: var(--fz-input);
+}
+/*не универсальный текст, не использовать везде*/
+.filter-text {
+  font-size: var(--fz-input);
+  width: 20rem;
+}
+/*кнокпи*/
+.button__dop {
+  width: 14rem;
+  color: var(--text-black);
+  height: 3.5rem;
+  font-weight: 600;
+  font-size: var(--fz-input);
+  background-color: var(--button);
+  border-radius: var(--border-radios);
+  text-align: center;
+}
+.button__dop:hover {
+  background-color: var(--button-active);
+}
+/*добавить ширины кнопке*/
+.button-create {
+  width: 20rem;
+}
+/*кнопки открыашки*/
+.button__hover {
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  padding: 1rem;
+  border-radius: var(--border-radios);
+  background-color: #afa2a23d;
+}
+.button__mb2 {
+  margin-bottom: 2rem;
+}
+/*инпуты*/
+.input {
+  width: 30rem;
+  height: 42px;
+  padding: 0 1rem;
+  background: var(--gray-light);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--border-radios);
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  transition: all 0.2s ease;
+  outline: none;
+}
+.input:hover {
+  border-color: var(--blue);
+  background: white;
+}
+.input:focus {
+  border-color: var(--blue);
+  background: white;
+}
+/*инпуты для даты с (число) по (число) */
+.date-input {
+  flex: 1;
+  height: 42px;
+  padding: 0 1rem;
+  width: 10rem;
+  background: var(--gray-light);
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--border-radios);
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  transition: all 0.2s ease;
+  outline: none;
+}
+/*текст - инпут, горизонтальное отображение*/
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/*контейнер где чек-бокс и горизонтально инпут*/
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--fz-input);
+  color: var(--text-black);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0.2rem 0;
+}
+.checkbox-item:hover {
+  color: var(--blue);
+}
+
+/*стили для чекбокса*/
+.checkbox-item input[type="checkbox"] {
+  width: 2rem;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--blue);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+/*для селетов ( при выборе чего-то одного)*/
+.filter-select {
+  font-size: var(--fz-input);
+  padding: 0 1rem;
+  height: 42px;
+  border: 1px solid var(--bg-hover);
+  border-radius: var(--border-radios);
+  width: 30rem;
+  cursor: pointer;
+}
+.header__button {
+  margin-bottom: 1.5rem;
+}

@@ -4,19 +4,19 @@ import "./OrdersPage.css";
 
 const OrdersPage = () => {
   return (
-    <div className="order-container">
-      <h1 className="order-title">Список заказов</h1>
+    <div className="return ">
+      <h1 className="title ">Список заказов</h1>
 
       {/* Фильтры */}
-      <div className="zakaz__container">
+      <div className="container__flex">
         <div className="filters-grid">
           <div className="filter-row">
-            <div className="filter-label">Номер заказа / штрихкод:</div>
-            <input type="text" className="filter-input" />
+            <div className="filter-text">Номер заказа / штрихкод:</div>
+            <input type="text" className="input" />
           </div>
 
           <div className="filter-row">
-            <div className="filter-label">Дата оформления:</div>
+            <div className="filter-text">Дата оформления:</div>
             <div className="date-range">
               <span>с </span>
               <input
@@ -34,7 +34,7 @@ const OrdersPage = () => {
           </div>
 
           <div className="filter-row">
-            <div className="filter-label">Дата оплаты:</div>
+            <div className="filter-text">Дата оплаты:</div>
             <div className="date-range">
               <span>с </span>
               <input
@@ -51,7 +51,7 @@ const OrdersPage = () => {
             </div>
           </div>
           <div className="filter-row">
-            <div className="filter-label">Дата сеанса:</div>
+            <div className="filter-text">Дата сеанса:</div>
             <div className="date-range">
               <span>с </span>
               <input
@@ -69,31 +69,31 @@ const OrdersPage = () => {
           </div>
 
           <div className="filter-row">
-            <div className="filter-label">Сеанс:</div>
-            <select className="filter-select">
+            <div className="filter-text">Сеанс:</div>
+            <select className="input">
               <option>- выберите -</option>
             </select>
           </div>
 
           <div className="filter-row">
-            <div className="filter-label">ФИО клиента:</div>
-            <input type="text" className="filter-input" />
+            <div className="filter-text">ФИО клиента:</div>
+            <input type="text" className="input" />
           </div>
 
           <div className="filter-row">
-            <div className="filter-label">Телефон:</div>
-            <input type="text" className="filter-input" />
+            <div className="filter-text">Телефон:</div>
+            <input type="text" className="input" />
           </div>
 
           <div className="filter-row">
-            <div className="filter-label">E-mail:</div>
-            <input type="text" className="filter-input" />
+            <div className="filter-text">E-mail:</div>
+            <input type="text" className="input" />
           </div>
         </div>
 
         {/* Статусы */}
         <div className="section">
-          <h3 className="section-title">Статусы:</h3>
+          <p className="text">Статусы:</p>
           <div className="checkbox-group">
             <label className="checkbox-item">
               <input type="checkbox" defaultChecked /> в брони
@@ -127,7 +127,7 @@ const OrdersPage = () => {
 
         {/* Способ получения */}
         <div className="section">
-          <h3 className="section-title">Способ получения:</h3>
+          <p className="text">Способ получения:</p>
           <div className="checkbox-group">
             <label className="checkbox-item">
               <input type="checkbox" defaultChecked /> кассы
@@ -146,7 +146,7 @@ const OrdersPage = () => {
 
         {/* Оформил */}
         <div className="section">
-          <h3 className="section-title">Оформил:</h3>
+          <p className="text">Оформил:</p>
           <div className="checkbox-group">
             <label className="checkbox-item">
               <input type="checkbox" defaultChecked /> все
@@ -188,9 +188,9 @@ const OrdersPage = () => {
         </div>
       </div>
       <div className="button__container">
-        <button className="button">Применить</button>
-        <button className="button">По умолчанию</button>
-        <button className="button">Выгрузить в Excel</button>
+        <button className="button__dop">Применить</button>
+        <button className="button__dop">По умолчанию</button>
+        <button className="button__dop">Выгрузить в Excel</button>
       </div>
     </div>
   );

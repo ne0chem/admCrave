@@ -1,18 +1,17 @@
 import React from "react";
-import "./AgentReturns.css";
 
 export default function AgentReturns() {
   return (
     <div className="return">
-      <h1 className="order-title">Заявки на возврат по согласованию</h1>
+      <h1 className="title">Заявки на возврат по согласованию</h1>
       <div className="return__container">
-        <button className="button">Создать заявку</button>
+        <button className="button__dop">Создать заявку</button>
         <div>
-          <p className="order-title">Поиск заявок</p>
+          <p className="title">Поиск заявок</p>
           <div className="poisk__container">
             <div className="filter-row">
               <div className="filter-text">Номер заказа:</div>
-              <input type="text" className="filter-input" />
+              <input type="text" className="input" />
             </div>
             <div className="filter-row">
               <div className="filter-text">Дата заявки:</div>
@@ -33,7 +32,7 @@ export default function AgentReturns() {
             </div>
             <div className="filter-row">
               <div className="filter-text">Статус заявки:</div>
-              <select className="filter-select">
+              <select className="input">
                 <option>Все</option>
                 <option>Открыта</option>
                 <option>Частично закрыта</option>
@@ -47,7 +46,7 @@ export default function AgentReturns() {
                 </label>
                 <p className="filter-text">Возврат по реквизитам:</p>
               </div>
-              <select className="filter-select">
+              <select className="input">
                 <option>Все</option>
                 <option>Платеж не сформирован</option>
                 <option>Платеж сформирован</option>
@@ -55,7 +54,7 @@ export default function AgentReturns() {
             </div>
           </div>
         </div>
-        <button className="button">Найти</button>
+        <button className="button__dop">Найти</button>
       </div>
     </div>
   );

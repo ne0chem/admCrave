@@ -1,0 +1,67 @@
+.header__button {
+  display: flex;
+  gap: 2rem;
+}
+
+/*настройки возврата*/
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  gap: 1rem;
+}
+.left__top {
+  display: flex;
+  gap: 4rem;
+  /* width: 50rem; */
+}
+.right__container {
+  display: flex;
+  gap: 1rem;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.text-dop {
+  margin-left: -1.5rem;
+}
+.chexbox-container {
+  display: flex;
+  gap: 1rem;
+}
+.dop_input {
+  width: 45rem;
+  height: 20rem;
+  text-align: left !important;
+  vertical-align: top !important;
+  padding: 8px;
+  resize: vertical;
+}
+.dop__checbox {
+  margin-bottom: 2rem;
+}
+
+.otmena__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.info__container {
+  display: flex;
+  width: 60rem;
+}
+
+.left__top {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--blue);
+  border-radius: var(--border-radios);
+  padding: 1rem;
+}
+.top__right {
+  width: 40rem;
+}
+.input__dop {
+  width: 25rem;
+}
